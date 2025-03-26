@@ -1,4 +1,4 @@
-# 📅 AgendaApp - Sistema Inteligente de Agendamentos  
+# 📅 AgendaApp - Sistema de Agendamentos  
 
 ## 🚀 **Visão Geral**  
 Aplicação desktop completa para **gestão profissional de compromissos**, desenvolvida com:  
