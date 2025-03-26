@@ -40,7 +40,7 @@ Public Class AuthService
                 Return New OperationResult(False, "Este email já está cadastrado.")
             End If
 
-            user.PasswordHash = ComputeHash(user.PasswordHash)
+            user.PasswordHash = user.PasswordHash
             _dbContext.Users.Add(user)
             _dbContext.SaveChanges()
 
