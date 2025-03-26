@@ -260,6 +260,14 @@
     End Sub
 
     Private Sub BtnLogout_Click(sender As Object, e As EventArgs)
+        _loggedInUser = Nothing
+        NavigateToLoginScreen()
+    End Sub
+
+    Private Sub NavigateToLoginScreen()
+        Dim loginForm = New LoginForm()
+        loginForm.Show()
+
         Me.Close()
     End Sub
 End Class
