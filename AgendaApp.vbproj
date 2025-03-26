@@ -83,10 +83,45 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\AgendaContext.vb" />
+    <Compile Include="Forms\AddEditAppointmentForm.Designer.vb">
+      <DependentUpon>AddEditAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditAppointmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.Designer.vb">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Migrations\202503251923242_InitialCreate.Designer.vb">
+      <DependentUpon>202503251923242_InitialCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503251923242_InitialCreate.vb" />
+    <Compile Include="Migrations\Configuration.vb" />
+    <Compile Include="Models\AppointmentResult.vb" />
+    <Compile Include="Models\Appointment.vb" />
+    <Compile Include="Models\OperationResult.vb" />
+    <Compile Include="Models\User.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -98,8 +133,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\AppointmentService.vb" />
+    <Compile Include="Services\AuthService.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AddEditAppointmentForm.resx">
+      <DependentUpon>AddEditAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterForm.resx">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503251923242_InitialCreate.resx">
+      <DependentUpon>202503251923242_InitialCreate.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -121,10 +173,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Forms\" />
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
