@@ -33,9 +33,9 @@ Aplicação desktop completa para **gestão profissional de compromissos**, dese
 **Opção 1 - App.config** (para testes):  
 ```xml
 <connectionStrings>
-  <add name="AgendaContext" 
-       connectionString="Server=.\SQLEXPRESS;Database=AgendaDB;Integrated Security=True;"
-       providerName="System.Data.SqlClient" />
+	<add name="AgendaContext"
+		 connectionString="Data Source=URL_BANCO;Initial Catalog=AgendaDB;User ID=USER;Password=SENHA;MultipleActiveResultSets=True"
+		 providerName="System.Data.SqlClient" />
 </connectionStrings>
 ```
 
