@@ -19,6 +19,7 @@ Aplicação desktop completa para **gestão profissional de compromissos**, dese
 | Categoria         | Tecnologias                          |
 |-------------------|--------------------------------------|
 | **Linguagem**     | VB.NET                               |
+| **Framework**     | .Net Framework 4.6.1                 |
 | **Interface**     | Windows Forms                        |
 | **Banco de Dados**| SQL Server + Entity Framework       |
 | **Padrões**       | Repository Pattern, SOLID           |
