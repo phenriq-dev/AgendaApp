@@ -61,7 +61,7 @@ dotnet user-secrets set "ConnectionStrings:AgendaContext" "SuaStringAqui"
 
 **✅ Gestão de Compromissos**
 
-- Pesquisa por datas
+- Possível adicionar, remover e editar compromissos
 - Notificações de conflitos
 - Interface responsiva
 
